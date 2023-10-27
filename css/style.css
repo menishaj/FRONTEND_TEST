@@ -8,7 +8,7 @@ html {
 
 .img-bg {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("../../assets/images/caralog10.jpg");
+    url("../../assets/images/caralog10.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -35,19 +35,27 @@ html {
 
 .intro-txt p {
     color: white;
-    font-family: "Great Vibes", cursive;
+    /* font-family: "Great Vibes", cursive; */
     font-family: "Roboto", sans-serif;
 }
 
 .header {
     height: 65px;
     width: 100%;
-    top: 0;
-    position: fixed;
+    /* top: 0;
+    position: fixed; */
     display: flex;
     justify-content: space-between;
     z-index: 100;
+    background-color: grey;
+    
 }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
 
 .logo {
     display: flex;
@@ -88,7 +96,11 @@ html {
     display: block;
     text-align: left;
 }
-
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -102,8 +114,13 @@ html {
     padding-bottom: 30px;
 }
 
-hr {
-    border-top: 0.5px solid #f1f2f6;
+/* .container-icon .fa-solid fa-envelope{
+
+font-size: 30px;
+} *
+
+
+
 }
 
 .box .txt p {
@@ -127,7 +144,6 @@ hr {
 
 .box .txt2 p {
     color: #2f3542;
-    font-family: "Great Vibes", cursive;
     font-family: "Roboto", sans-serif;
 }
 
@@ -165,7 +181,7 @@ hr {
     position: absolute;
     transition: all 0.3s;
 }
-
+/* pseudo-element */
 .menu-icon::before {
     top: -6px;
 }
@@ -190,6 +206,8 @@ hr {
 @media screen and (max-width: 992px) {
     .header {
         background-color: #333;
+        position:fixed;
+        top:0;
     }
 
     .img-bg {
